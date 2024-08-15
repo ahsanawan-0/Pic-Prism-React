@@ -1,10 +1,11 @@
 import {BrowserRouter,Route,Routes} from "react-router-dom"
-import { Home } from "./pages/Home"
+
 import { Login } from "./pages/Login"
 import { Singup } from "./pages/Singup"
 import { SellerDashbod } from "./pages/SellerDashbod"
 import BuyerDashbod from "./pages/BuyerDashbod"
 import Navbar from "./components/Navbar"
+import Home from "./pages/Home"
  export default function App() {
   return (
 <>
