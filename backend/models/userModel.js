@@ -42,6 +42,14 @@ const UserSchema = new mongoose.Schema({
 
     }
 ],
+isVerified: {
+  type: Boolean,
+  default: false,
+},
+verificationToken: String, // Store the 4-digit code here
+verificationTokenExpiresAt: String, // Expires 4-digit code here
+resetPasswordToken: String, // 
+resetPasswordExpiresAt: String, // 
 
-});
+},{timestamps:true});
 module.exports = mongoose.model('User', UserSchema);
